@@ -1,3 +1,5 @@
+#! /bin/sh
+#
 # ~/.ssh/
 #         This directory is the default location for all user-specific con-
 #         figuration and authentication information.  There is no general
