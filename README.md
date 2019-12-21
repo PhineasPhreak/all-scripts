@@ -1,5 +1,9 @@
 # all-scripts
 **Script Bash (Linux) and Batch (Windows)**
 
-### Learn bash script:
-Site: https://ryanstutorials.net/bash-scripting-tutorial/
+### Learn Bash Script :
+Site : [RyanTutorials](https://ryanstutorials.net/bash-scripting-tutorial/) </br>
+Site : [TutorialsPoint](https://www.tutorialspoint.com/unix/shell_scripting.htm)
+
+### Learn Batch Script :
+Site : [TutorialsPoint](https://www.tutorialspoint.com/batch_script/index.htm)
