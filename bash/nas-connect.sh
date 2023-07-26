@@ -12,3 +12,6 @@ sudo mkdir /mnt/dlink/volume_1/
 # - vers : define version of SMB
 # - username : username for the NAS
 sudo mount --verbose --type cifs --options vers=1.0,username=pspk //dlink-25730a/Volume_1 /mnt/dlink/volume_1
+
+# Unmount file system /mnt/dlink/volume_1
+#umount --verbose --all-targets /mnt/dlink/volume_1
