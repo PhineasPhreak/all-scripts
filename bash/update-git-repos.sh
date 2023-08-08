@@ -10,11 +10,19 @@
 # store the current dir
 CUR_DIR=$(pwd)
 
+# first argument branch name (master, main, etc.)
+args=$($1)
+
 # test command 'git', if exists
 GIT=$(command -v git)
 
 if [ -z "$GIT" ]; then
     echo -e "Command git not found, please install git package";
+    exit 1;
+fi
+
+if [ -z "$args" ]; then
+    echo -e "First missing argument, please enter the branch name (master, main, etc.)";
     exit 1;
 fi
 
@@ -32,7 +40,7 @@ for i in $(find . -mindepth 1 -maxdepth 2 -type d -name ".git" | cut -c 3-); do
     cd ..;
 
     # finally pull
-    git pull origin master;
+    git pull origin $args;
 
     # lets get back to the CUR_DIR
     cd $CUR_DIR;
